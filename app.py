@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import os
 
-import aws_cdk as cdk
+from aws_cdk import App
 
 from job_scraper.job_scraper_stack import JobScraperStack
 
 
-app = cdk.App()
+app = App()
 JobScraperStack(app, "JobScraperStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
